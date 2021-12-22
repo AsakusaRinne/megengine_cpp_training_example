@@ -11,6 +11,8 @@
 
 ### 首先，克隆本项目并运行脚本准备依赖项
 
+提示：国内可能会克隆一些子项目比较慢，甚至失败，请多尝试几次或者使用代理。
+
 ```
 git clone https://github.com/AsakusaRinne/megengine_cpp_training_examples.git
 ./third_party/prepare.sh
@@ -39,7 +41,7 @@ git clone https://github.com/AsakusaRinne/megengine_cpp_training_examples.git
 
 其中，可执行文件默认存在于```build_dir```中与目标平台对应的目录中的```install/bin```文件夹下，也可以自行修改```CMakeLists.txt```中的```install```命令内容来指定安装目录。
 
-比如目标平台是```android_arm```时，处于```build_dir/android/arm-xx/Release/install/bin```路径下。
+比如目标平台是```android_arm```且使用release模式时，处于```build_dir/android/arm-xx/Release/install/bin```路径下。
 
 ```
 ./CppTrainingExamples mnist

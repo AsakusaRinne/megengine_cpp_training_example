@@ -37,7 +37,7 @@ Please choose one of these scripts and run it. For example, if we want to build 
 
 The executable file is on default in the directory ```install/bin``` of the ```build_dir``` with your selected platform as prefix.
 
-For example, executable file of building with ```android_arm``` is in ```build_dir/android/arm-xx/Release/install/bin```.
+For example, executable file of building with ```android_arm``` and release mode is in ```build_dir/android/arm-xx/Release/install/bin```.
 
 ```
 ./CppTrainingExamples mnist
