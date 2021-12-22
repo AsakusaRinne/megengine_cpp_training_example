@@ -27,7 +27,6 @@ option(MGE_ENABLE_LOGGING "Build with logging" ON)
 option(MGE_ENABLE_EXCEPTIONS "Build with exceptions" ON)
 
 
-
 include(FetchContent)
 set(megengine_SOURCE_DIR ${PROJECT_SOURCE_DIR}/third_party/MegEngine)
 set(megengine_BUILD_DIR ${PROJECT_BINARY_DIR}/MegEngine)
@@ -49,10 +48,10 @@ file(GLOB_RECURSE SOURCES mainfile/main.cpp mnist/*.cpp helper/*.cpp ${progressb
 add_executable(CppTrainingExamples ${SOURCES})
 target_link_libraries(CppTrainingExamples megbrain megdnn)
 
-install(TARGETS CppTrainingExamples 
-        RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
-        )   
-
+install(
+TARGETS CppTrainingExamples 
+RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
+)   
 
 target_include_directories(CppTrainingExamples PRIVATE ${PROJECT_SOURCE_DIR}/third_party/MegEngine)
 target_include_directories(CppTrainingExamples PRIVATE ${PROJECT_SOURCE_DIR}/third_party)
