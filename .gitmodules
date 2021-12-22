@@ -1,0 +1,6 @@
+[submodule "third_party/MegEngine"]
+	path = third_party/MegEngine
+	url = https://github.com/MegEngine/MegEngine.git
+[submodule "third_party/progressbar"]
+	path = third_party/progressbar
+	url = https://github.com/gipert/progressbar.git
