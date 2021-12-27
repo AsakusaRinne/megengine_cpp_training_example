@@ -14,7 +14,8 @@
 提示：国内可能会克隆一些子项目比较慢，甚至失败，请多尝试几次或者使用代理。
 
 ```
-git clone https://github.com/AsakusaRinne/megengine_cpp_training_examples.git
+git clone https://github.com/AsakusaRinne/megengine_cpp_training_example.git
+cd megengine_cpp_training_example
 ./third_party/prepare.sh
 ./third_party/MegEngine/third_party/prepare.sh
 ./third_party/MegEngine/third_party/install-mkl.sh
